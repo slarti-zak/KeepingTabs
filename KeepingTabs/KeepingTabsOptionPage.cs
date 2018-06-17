@@ -34,7 +34,7 @@ namespace KeepingTabs
 
 		[Category("User Activity")]
 		[DisplayName("Track User Inactivity")]
-		[Description("Will track when the user is absent. Will expire tabs during that time. Having Visual Studio in the Background or being absent for a time will count as inactive.")]
+		[Description("Will track when the user is absent. Will not expire tabs during that time when activated. Having Visual Studio in the Background or being absent for a time will count as inactive.")]
 		public bool TrackUserInactivity
 		{
 			get => Settings.TrackUserInactivity;
